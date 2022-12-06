@@ -27,4 +27,6 @@ func main() {
 	if err := s.Start(); err != nil {
 		log.Fatal(err)
 	}
+
+	//Lab_7_8()
 }
