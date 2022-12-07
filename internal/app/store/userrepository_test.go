@@ -1,6 +1,7 @@
 package store_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/AisanaOlpan/GoProject/internal/app/model"
@@ -30,5 +31,6 @@ func TestUserRepository_FindByEmail(t *testing.T) {
 	u, err = s.User().FindByEmail(email)
 	assert.NoError(t, err)
 	assert.NotNil(t, u)
+	fmt.Print(u)
 
 }
